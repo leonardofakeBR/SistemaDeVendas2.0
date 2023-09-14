@@ -8,6 +8,36 @@ package com.mycompany.modelo;
  *
  * @author leonardo.35903
  */
-public class Computador {
+public class Computador extends Produto{
+    private Double memoriaRam;
+    private String processador;
+
+    public Computador() {
+    }
+
+    public Double getMemoriaRam() {
+        return memoriaRam;
+    }
+
+    public void setMemoriaRam(Double memoriaRam) {
+        this.memoriaRam = memoriaRam;
+    }
+
+    public String getProcessador() {
+        return processador;
+    }
+
+    public void setProcessador(String processador) {
+        this.processador = processador;
+    }
+
+    @Override
+    public String toString() {
+        return  "Nome: " + super.getNome() + 
+                " | Preço: " + super.getPreco() +
+                "| Memória ram: " + this.memoriaRam + 
+                "| Processador: " + this.processador;
+    }
+
     
 }
