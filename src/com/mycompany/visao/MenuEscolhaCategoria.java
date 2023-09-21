@@ -92,8 +92,31 @@ public class MenuEscolhaCategoria extends javax.swing.JFrame {
 
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         // TODO add your handling code here:
-//          switch(cbCategorias.getSelectedIndex())
-            JOptionPane.showMessageDialog(null, cbCategorias.getSelectedIndex());
+            switch(cbCategorias.getSelectedIndex()){
+                case 0:
+                  
+                    CadastroComputador cadastroComputador = new CadastroComputador();
+                  
+                    cadastroComputador.setLocationRelativeTo(null);
+                    cadastroComputador.setVisible(true);
+                  
+                    break;
+                case 1:
+                    CadastroVideoGame cadastroVideoGame = new CadastroVideoGame();
+                  
+                    cadastroVideoGame.setLocationRelativeTo(null);
+                    cadastroVideoGame.setVisible(true);
+                  
+                    break;
+                case 2:
+                    CadastroTv cadastrotv = new CadastroTv();
+                  
+                    cadastrotv.setLocationRelativeTo(null);
+                    cadastrotv.setVisible(true);
+                  
+                    break;
+          }
+         
     }//GEN-LAST:event_btnOKActionPerformed
 
     /**

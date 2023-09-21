@@ -102,6 +102,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarActionPerformed
         // TODO add your handling code here:
+        MenuListar menuListar = new MenuListar();
+        menuListar.setLocationRelativeTo(null);
+        menuListar.setVisible(true);
     }//GEN-LAST:event_btnListarActionPerformed
 
     /**
